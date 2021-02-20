@@ -2,3 +2,54 @@
     background-color: #F8F3F4;
     min-height: 148px;
 } 
+
+.new-arrivals  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: inherit;
+}
+
+.new-arrivals h1 {
+    margin: 24px 0 32px;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 400;
+    color: #F16D7F;
+}
+
+.new-arrivals nav a, 
+.new-arrivals nav span {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+}
+
+.new-arrivals nav span {
+    margin: 0 3px;
+}
+
+.new-arrivals nav a {
+    text-decoration: none;
+}
+
+.new-arrivals nav a:last-of-type {
+    font-weight: 400;
+    color: #F16D7F;
+}
+
+@media (min-width: 768px) {
+    .new-arrivals  .container {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 16px;
+    }  
+} 
+
+@media (min-width: 1600px) {
+    .new-arrivals  .container {
+        padding: 0;
+    }
+}
+    
