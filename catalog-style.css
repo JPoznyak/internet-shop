@@ -51,13 +51,28 @@
     padding-right: 8px;
 }
 
-.filters-left img {
+.filters-left {
+    position: relative;
+}
+
+.filters-left:hover span,
+.filters-left:hover .filter-icon {
+    left: 16px;
+    top: 13px;
+    color: #EF5B70;
+}
+
+.filters-left .filter-icon {
     width: 37px;
     height: 25px;
+    position: relative;
+    z-index: 2;
 }
 
 .filters-left span {
     display: none;
+    position: relative;
+    z-index: 2;
 }
 
 .filters-right {
@@ -76,6 +91,104 @@
     margin-left: 15px;
 }
 
+.filters-left:hover .filter-menu, 
+.filter-size:hover .filter-sizes  {
+    display: block;
+}
+
+.category-list {
+    display: none;
+}
+
+.filter-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 360px;
+    background: #ffffff;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    padding: 46px 16px 16px 16px;
+    z-index: 1;
+    overflow-y: auto;
+}
+
+/* .category-list {
+    display: none;
+}    */
+
+.filter-category:hover .category-list {
+    display: block;
+}
+
+.filter-category-title {
+    font-size: 14px;
+    line-height: 37px;
+    color: #ef5b70;
+    padding-left: 11px;
+    min-height: 37px;
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 24px;
+    position: relative;
+    cursor: pointer;
+}
+
+.filter-category-title:before {
+    content: "";
+    width: 5px;
+    min-height: inherit;
+    background: #ef5b70;
+    position: absolute;
+    left: 0;
+    top: 1px;
+}
+
+.filter-category:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.filter-category a {
+    display: block;
+    text-decoration: none;
+    padding-left: 34px;
+    padding-right: 16px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6f6e6e;
+}
+
+.filter-category a:not(:last-child) {
+    margin-bottom: 11px;
+}
+
+.size-wrap {
+    cursor: pointer;
+}
+
+.filter-size {
+    position: relative;
+}
+
+.filter-sizes {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    width: 79px;
+    height: 103px;
+    background: #ffffff;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    padding: 7px 9px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #6f6e6e;
+}
+
+.filter-sizes > div:not(:last-child) {
+    margin-bottom: 4px;
+}
+
+
 
 @media (min-width: 768px) {
     .new-arrivals  .container {
@@ -89,7 +202,7 @@
         padding-right: 16px;
     }
 
-    .filters-left img {
+    .filters-left .filter-icon {
         width: 15px;
         height: 10px;
         margin-left: 11px;
