@@ -296,8 +296,8 @@ body {
     background-size: cover;
     padding-top: 64px;
     padding-bottom: 109px;
-    padding-left: 20px;
-    padding-right: 20px;
+    /* padding-left: 20px;
+    padding-right: 20px; */
 }
 
 .user-info {
@@ -406,6 +406,11 @@ body {
     display: flex;
 }
 
+.copyright {
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+
 .footer a {
     color: black;
     background: white;
@@ -511,9 +516,6 @@ body {
         justify-content: space-between;
 	}
 	
-	.copyright {
-        margin-top: 40px;
-    }
 }
 
 @media (min-width: 1600px) {
@@ -620,10 +622,11 @@ body {
 	}
 
 	.subscribe .container {
-        margin: 0 auto;
+		margin: 0 auto;
+		padding: 0;
         width: 1140px;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
 	}
 	
 	.subscribe-form {
