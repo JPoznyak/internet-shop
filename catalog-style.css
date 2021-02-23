@@ -243,6 +243,12 @@
 } 
 
 @media (min-width: 1600px) {
+    
+    .container {
+        margin: 0 auto;
+        width: 1140px;
+    }
+    
     .new-arrivals  .container {
         padding: 0;
     }
