@@ -140,6 +140,11 @@
   }
 
 
+ .feature-item:last-child {
+     display: none;
+ }
+
+
 @media (min-width: 768px) {
     .slider .slider-image {
         margin-top: 30px;
@@ -162,11 +167,12 @@
 
     .slider {
         min-height: 777px;
+
+        .slider-image {
+            margin-top: 11px;
+          }
     }
 
-    .slider .slider-image {
-        margin-top: 11px;
-      }
 
       .collection {
         margin-top: -64px;
@@ -174,6 +180,10 @@
         position: relative;
         padding-left: 0;
         padding-right: 0;
+    }
+
+    .feature-item:last-child {
+        display: block;
     }
 }
     
