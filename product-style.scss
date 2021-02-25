@@ -30,46 +30,66 @@
     .slider-left-arrow {
       left: 0;
       background-image: url(images/product/left-arrow.svg);
+
+      &:hover {
+        background-image: url(images/product/left-arrow-hover.svg);
+      }
+
     }
     
-    .slider-left-arrow:hover {
-      background-image: url(images/product/left-arrow-hover.svg);
-    }
     
     .slider-right-arrow {
       right: 0;
       background-image: url(images/product/right-arrow.svg);
-    }
-    
-    .slider-right-arrow:hover {
-      background-image: url(images/product/right-arrow-hover.svg);
-    }
 
-  }
+      &:hover {
+        background-image: url(images/product/right-arrow-hover.svg);
+      }
+
+    }
+}
   
 
   .collection {
       padding: 64px 24px;
       border: 1px solid #EAEAEA;
       margin-bottom: 64px;
+
+      .collection-title {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #F16D7F;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 12px;
+      }
+    
+      .collection-title-line {
+          height: 3px;
+          width: 63px;
+          background-color: #EF5B70;
+          margin: 0 auto 12px;
+      }
+
+      button {
+        font-size: 16px;
+        line-height: 19px;
+        color: #F26376;
+        border: 1px solid #FF6A6A;
+        background: none;
+        padding: 15px 24px;
+        display: flex;
+        text-align: center;
+        margin: 0 auto;
+      
+        img {
+            margin-right: 23px;
+        }
+      
+      }
   }
 
-  .collection-title {
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    color: #F16D7F;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 12px;
-  }
-
-  .collection-title-line {
-      height: 3px;
-      width: 63px;
-      background-color: #EF5B70;
-      margin: 0 auto 12px;
-  }
 
   .collection-item-name {
     font-weight: 300;
@@ -116,29 +136,12 @@
     color: #6F6E6E;
     margin: 0 auto 64px;
     max-width: 304px;
-  }
-
-  .collection-filter img {
-      margin-left: 5px;
-  }
-
-  .collection button {
-    font-size: 16px;
-    line-height: 19px;
-    color: #F26376;
-    border: 1px solid #FF6A6A;
-    background: none;
-    padding: 15px 24px;
-    display: flex;
-    text-align: center;
-    margin: 0 auto;
 
     img {
-        margin-right: 23px;
+        margin-left: 5px;
     }
 
   }
-
 
  .feature-item:last-child {
      display: none;
@@ -173,8 +176,7 @@
           }
     }
 
-
-      .collection {
+    .collection {
         margin-top: -64px;
         background-color: #ffffff;
         position: relative;

@@ -52,7 +52,7 @@
   margin-bottom: 64px;
 }
 
-.collection-title {
+.collection .collection-title {
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
@@ -62,11 +62,29 @@
   margin-bottom: 12px;
 }
 
-.collection-title-line {
+.collection .collection-title-line {
   height: 3px;
   width: 63px;
   background-color: #EF5B70;
   margin: 0 auto 12px;
+}
+
+.collection button {
+  font-size: 16px;
+  line-height: 19px;
+  color: #F26376;
+  border: 1px solid #FF6A6A;
+  background: none;
+  padding: 15px 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.collection button img {
+  margin-right: 23px;
 }
 
 .collection-item-name {
@@ -122,24 +140,6 @@
 
 .collection-filter img {
   margin-left: 5px;
-}
-
-.collection button {
-  font-size: 16px;
-  line-height: 19px;
-  color: #F26376;
-  border: 1px solid #FF6A6A;
-  background: none;
-  padding: 15px 24px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  margin: 0 auto;
-}
-
-.collection button img {
-  margin-right: 23px;
 }
 
 .feature-item:last-child {
