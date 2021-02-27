@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Internet shop</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+	<link href="http://designify.me/code-snippets/animated-buttons/css/btns.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="catalog-style.css">
+	<link rel="stylesheet" href="product-style.css">
+	<link rel="stylesheet" href="cart-style.css">
+
+
+</head>
+<body>
+	<div class="header">
+		<div class="nav-bar container">
+			<div class="right-side">
+				<img src="images/logo.png" alt="logo">
+				<img class="search-icon" src="images/search.svg" alt="logo">
+			</div>
+			<div class="left-side">
+				<img class="bars-icon" src="images/bars.svg" alt="bars">
+				<img class="user-icon" src="images/user.svg" alt="user">
+				<span class="cart-block">
+					<img class="cart-icon" src="images/cart.svg" alt="cart">
+					<span>5</span>
+				</span>
+			</div>
+		</div>
+	</div>
+
+	<div class="new-arrivals">
+		<div class="container">
+			<h1>SHOPPING CART</h1>
+		</div>
+	</div>
+
+	<div class="container shopping-cart">
+		<div class="shopping-cart-letf">
+			<div class="shopping-item">
+				<img class="cart-img" src="images/feature3.jpg" alt="">
+				<div class="cart-content">
+					<div class="cart-title">MANGO  PEOPLE  T-SHIRT</div>
+					<div class="cart-data">
+						<div class="cart-item-price">Price: <span>$300</span></div>
+						<div class="cart-item-color">Color: Red</div>
+						<div class="cart-item-size">Size: Xl</div>
+						<div class="cart-item-quantity">Quantity:
+							<input type="text" value="2">
+						</div>
+					</div>
+				</div>
+				<img class="close-icon" src="images/close-icon.svg" alt="">
+			</div>
+			<div class="shopping-item">
+				<img class="cart-img" src="images/feature4.jpg" alt="">
+				<div class="cart-content">
+					<div class="cart-title">MANGO  PEOPLE  T-SHIRT</div>
+					<div class="cart-data">
+						<div class="cart-item-price">Price: <span>$300</span></div>
+						<div class="cart-item-color">Color: Red</div>
+						<div class="cart-item-size">Size: Xl</div>
+						<div class="cart-item-quantity">Quantity:
+							<input type="text" value="2">
+						</div>
+					</div>
+				</div>
+				<img class="close-icon" src="images/close-icon.svg" alt="">
+			</div>
+				
+
+			<div class="cart-left-buttons">
+				<button>Clear shopping cart</button>
+				<button>Continue shopping</button>
+			</div>
+		</div>
+
+		<div class="shopping-cart-right">
+            <form action="" class="cart-form">
+                <div class="cart-right-header">SHIPPING ADDRESS</div>
+                <input type="text" placeholder="Bangladesh">
+                <input type="text" placeholder="State">
+                <input type="text" placeholder="Postcode / Zip">
+                <button>GET A QUOTE</button>
+            </form>
+
+            <div class="cart-total">
+                <div class="subtotal">
+                    SUB TOTAL <span>$900</span>
+                </div>
+                <div class="grandtotal">
+                    GRAND TOTAL <span>$900</span>
+                </div>
+                <hr>
+                <button>PROCEED TO CHECKOUT</button>
+            </div>
+        </div>
+		
+	</div>
+
+	
+	<!-- <div class="features container">
+		<div class="features-container">
+				<div class="feature-item">
+				<div class="item-img-wrap">
+					<img src="images/feature3.jpg" alt="photo">
+					<div class="item-img-dark">
+						<button>
+							<img src="images/cart.svg" alt="cart">Add to Cart
+						</button>
+					</div>
+				</div>
+				<div class="item-name">ELLERY X M'O CAPSULE</div>
+				<div class="item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</div>
+				<div class="item-price">$52.00</div>
+			</div>
+
+			<div class="feature-item">
+				<div class="item-img-wrap">
+					<img src="images/feature4.jpg" alt="photo">
+					<div class="item-img-dark">
+						<button>
+							<img src="images/cart.svg" alt="cart">Add to Cart
+						</button>
+					</div>
+				</div>
+				<div class="item-name">ELLERY X M'O CAPSULE</div>
+				<div class="item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</div>
+				<div class="item-price">$52.00</div>
+			</div>
+
+			<div class="feature-item">
+				<div class="item-img-wrap">
+					<img src="images/feature6.jpg" alt="photo">
+					<div class="item-img-dark">
+						<button>
+							<img src="images/cart.svg" alt="cart">Add to Cart
+						</button>
+					</div>
+				</div>
+				<div class="item-name">ELLERY X M'O CAPSULE</div>
+				<div class="item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</div>
+				<div class="item-price">$52.00</div>
+			</div>
+		</div>
+
+			<div class="pagination">
+				<img src="images/catalog/arrow-left.svg" alt="">
+					<a href="#">1</a>
+					<a href="#">2</a>
+					<a href="#">3</a>
+					<a href="#">4</a>
+					<a href="#">5</a>
+					<a href="#">6...20</a>
+				<img src="images/catalog/arrow-right.svg" alt="">
+			</div>
+	</div> -->
+	
+	<div class="subscribe">
+        <div class="container">
+
+            <div class="user-info">
+                <img class="rotate-vert-center" src="images/subscribe-user.png" alt="">
+                <div class="user-text">
+                    “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“
+                </div>
+            </div>
+
+            <div class="subscribe-form">
+                <div class="form-title">SUBSCRIBE</div>
+                <div class="form-text">FOR OUR NEWLETTER AND PROMOTION</div>
+                <form action="" class="email">
+                    <input type="text" placeholder="Enter Your Email">
+                    <button>Subscribe</button>
+                </form>
+            </div>
+
+        </div>
+	</div>
+	
+	<div class="footer">
+        <div class="container">
+			<div class="social">
+				<a href="#">
+					<i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#">
+					<i class="fab fa-instagram"></i>
+                </a>
+                <a href="#">
+					<i class="fab fa-pinterest-p"></i>
+                </a>
+                <a href="#">
+					<i class="fab fa-twitter"></i>
+                </a>
+            </div>
+			<div class="copyright">
+				&copy; 2021  Brand  All Rights Reserved.
+			</div>
+        </div>
+    </div>
+
+
+
+
+</body>
+</html>
