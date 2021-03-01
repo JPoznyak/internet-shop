@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+.new-arrivals {
+  background: #f8f3f4;
+  min-height: 148px;
+
+  h1 {
+      margin: 0;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 29px;
+      color: #F16D7F;
+      ;
+  }
+
+  .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: inherit;
+
+      @media (min-width: 768px) {
+          justify-content: flex-start;
+      }
+
+      @media (min-width: 768px) and (max-width: 1599px) {
+          padding: 0 16px;
+      }
+  }
+}
+
+.reg-input {
+  border: 1px solid #A4A4A4;
+  height: 44px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 16px;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+  margin-top: 19px;
+}
+
+.registration {
+  margin-top: 40px;
+  margin-bottom: 96px;
+
+  @media (max-width: 767px) {
+      padding: 0 8px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1599px) {
+      padding: 0 16px;
+  }
+
+  @media (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .registration-form {
+      @media (min-width: 768px) and (max-width: 1439px) {
+          margin-right: 22px;
+      }
+
+      @media (min-width: 1440px) {
+          margin-right: 128px;
+      }
+  
+    .reg-name-title, reg-login-title {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 19px;
+      color: #222222;
+    }
+
+    .gender {
+        margin-top: 31px;
+        margin-bottom: 33px;
+        font-weight: 300;
+        font-size: 11px;
+        line-height: 13px;
+        color: #000000;
+        display: flex;
+        align-items: center;
+
+        input {
+            margin-right: 10px;
+
+            &:not(:first-of-type) {
+                margin-left: 20px;
+            }
+        }
+    }
+
+    .reg-text {
+      font-weight: 300;
+      font-size: 13px;
+      line-height: 16px;
+      margin-top: 15px;
+      margin-bottom: 39px;
+    }
+
+    .reg-button {
+      height: 50px;
+      width: 167px;
+      background: #F16D7F;
+      font-family: inherit;
+      font-size: 14px;
+      line-height: 17px;
+      color: #FFFFFF;
+      border: none;
+
+      img {
+          margin-left: 20px;
+      }
+    }
+  }
+ 
+
+  .registration-loyalty {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 19px;
+      color: #000000;
+
+      @media (max-width: 767px) {
+        margin-top: 40px;
+      }
+
+      @media (min-width: 1600px) {
+        font-size: 24px;
+        line-height: 29px;
+      }
+
+      .loyalty-title {
+        margin-bottom: 32px;
+      }
+
+      .loyalty-text {
+        margin-bottom: 22px;
+      }
+
+      .loyalty-list {
+        list-style-type: none;
+        position: relative;
+        
+        li {
+          padding-left: 16px;
+    
+            &:not(:first-child) {
+                margin-top: 16px;
+            }
+
+          &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            display: block;
+            width: 20px;
+            height: 16px;
+            background: url('images/reg-marker.png') no-repeat;
+          }
+        }
+      }
+  }
+}

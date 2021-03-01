@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+.new-arrivals {
+  background: #f8f3f4;
+  min-height: 148px;
+}
+
+.new-arrivals h1 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  color: #F16D7F;
+}
+
+.new-arrivals .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: inherit;
+}
+
+@media (min-width: 768px) {
+  .new-arrivals .container {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1599px) {
+  .new-arrivals .container {
+    padding: 0 16px;
+  }
+}
+
+.reg-input {
+  border: 1px solid #A4A4A4;
+  height: 44px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 12px 16px;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+  margin-top: 19px;
+}
+
+.registration {
+  margin-top: 40px;
+  margin-bottom: 96px;
+}
+
+@media (max-width: 767px) {
+  .registration {
+    padding: 0 8px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1599px) {
+  .registration {
+    padding: 0 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .registration {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .registration .registration-form {
+    margin-right: 22px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .registration .registration-form {
+    margin-right: 128px;
+  }
+}
+
+.registration .registration-form .reg-name-title, .registration .registration-form reg-login-title {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+
+.registration .registration-form .gender {
+  margin-top: 31px;
+  margin-bottom: 33px;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.registration .registration-form .gender input {
+  margin-right: 10px;
+}
+
+.registration .registration-form .gender input:not(:first-of-type) {
+  margin-left: 20px;
+}
+
+.registration .registration-form .reg-text {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  margin-top: 15px;
+  margin-bottom: 39px;
+}
+
+.registration .registration-form .reg-button {
+  height: 50px;
+  width: 167px;
+  background: #F16D7F;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  border: none;
+}
+
+.registration .registration-form .reg-button img {
+  margin-left: 20px;
+}
+
+.registration .registration-loyalty {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+@media (max-width: 767px) {
+  .registration .registration-loyalty {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .registration .registration-loyalty {
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+
+.registration .registration-loyalty .loyalty-title {
+  margin-bottom: 32px;
+}
+
+.registration .registration-loyalty .loyalty-text {
+  margin-bottom: 22px;
+}
+
+.registration .registration-loyalty .loyalty-list {
+  list-style-type: none;
+  position: relative;
+}
+
+.registration .registration-loyalty .loyalty-list li {
+  padding-left: 16px;
+}
+
+.registration .registration-loyalty .loyalty-list li:not(:first-child) {
+  margin-top: 16px;
+}
+
+.registration .registration-loyalty .loyalty-list li:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 20px;
+  height: 16px;
+  background: url("images/reg-marker.png") no-repeat;
+}
+/*# sourceMappingURL=registration-style.css.map */
