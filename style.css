@@ -503,12 +503,19 @@
   background: #FF6A6A;
 }
 
-.services {
+.b-services {
   background: #222224;
   padding: 48px 14px 81px 14px;
 }
 
-.service-block {
+@media (min-width: 1600px) {
+  .b-services {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.b-services .b-services__serviceBlock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -523,20 +530,30 @@
   color: #FBFBFB;
 }
 
-.services .container {
+.b-services .container {
   display: -ms-grid;
   display: grid;
   gap: 46px;
 }
 
-.services-title {
+@media (min-width: 1600px) {
+  .b-services .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    gap: 46px;
+  }
+}
+
+.b-services .servicesTitle {
   font-size: 20px;
   line-height: 24px;
   margin-top: 27px;
   margin-bottom: 15px;
 }
 
-.service-text {
+.b-services .serviceText {
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
@@ -749,17 +766,6 @@ body {
 }
 
 @media (min-width: 1600px) {
-  .services {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-  .services .container {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-    gap: 46px;
-  }
   .subscribe {
     padding-top: 97px;
     padding-bottom: 126px;
