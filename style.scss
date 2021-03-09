@@ -163,27 +163,6 @@ body {
 
 @media (min-width: 768px) {
 
-	.catalog {
-		grid-template-columns: repeat(3, 1fr);
-		grid-template-rows: 167px 116px;
-		grid-gap: 20px;
-	}
-
-	.accesories {
-		grid-column: 1/-1;
-	}
-
-	.features {
-		padding-left: 16px;
-		padding-right: 16px;
-	}
-
-	.features-container {
-		grid-template-columns: 1fr 1fr;
-		row-gap: 18px;
-		column-gap: 16px;
-	}
-
 	.footer {
         padding: 24px 30px;
 	}
@@ -200,16 +179,6 @@ body {
 }
 
 @media (min-width: 1600px) {
-
-	.features {
-		padding-left: 0;
-		padding-right: 0;
-	}
-
-	.features-container {
-		grid-template-columns: repeat(3, 1fr);
-		gap: 30px;
-	}
 
 	.services {
         padding-top: 100px;
