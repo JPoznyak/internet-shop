@@ -705,12 +705,18 @@ body {
   padding: 0 17px;
 }
 
-.footer {
+.b-footer {
   background: #222224;
   padding: 43px 20px 30px;
 }
 
-.footer .container {
+@media (min-width: 768px) {
+  .b-footer {
+    padding: 24px 30px;
+  }
+}
+
+.b-footer .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -723,17 +729,36 @@ body {
           align-items: center;
 }
 
-.social {
+@media (min-width: 768px) {
+  .b-footer .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.b-footer__social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.copyright {
+.b-footer__copyright {
   padding-bottom: 24px;
+  color: white;
 }
 
-.footer a {
+@media (min-width: 768px) {
+  .b-footer__copyright {
+    padding-top: 15px;
+  }
+}
+
+.b-footer a {
   color: black;
   background: white;
   width: 32px;
@@ -750,34 +775,12 @@ body {
   text-decoration: none;
 }
 
-.footer a:hover {
+.b-footer a:hover {
   background: #f16d7f;
   color: white;
 }
 
-.footer a:not(:last-child) {
+.b-footer a:not(:last-child) {
   margin-right: 7px;
-}
-
-.copyright {
-  color: white;
-}
-
-@media (min-width: 768px) {
-  .footer {
-    padding: 24px 30px;
-  }
-  .footer .container {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .copyright {
-    padding-top: 15px;
-  }
 }
 /*# sourceMappingURL=style.css.map */
