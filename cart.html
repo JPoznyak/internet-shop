@@ -9,41 +9,37 @@
 	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="catalog-style.css">
-	<link rel="stylesheet" href="product-style.css">
-	<link rel="stylesheet" href="cart-style.css">
-
 
 </head>
 <body>
 	<div class="header">
-		<div class="nav-bar container">
-			<div class="right-side">
+		<div class="b-navBar container">
+			<div class="b-navBar__rightSide">
 				<img src="images/logo.png" alt="logo">
-				<img class="search-icon" src="images/search.svg" alt="logo">
+				<img class="b-navBar__rightSide_searchIcon" src="images/search.svg" alt="logo">
 			</div>
-			<div class="left-side">
-				<img class="bars-icon" src="images/bars.svg" alt="bars">
-				<img class="user-icon" src="images/user.svg" alt="user">
-				<span class="cart-block">
-					<img class="cart-icon" src="images/cart.svg" alt="cart">
+			<div class="b-navBar__leftSide">
+				<img class="b-navBar__leftSide_barsIcon" src="images/bars.svg" alt="bars">
+				<img class="b-navBar__leftSide_userIcon" src="images/user.svg" alt="user">
+				<span class="b-leftSide__cartBlock">
+					<img class="b-leftSide__cartBlock_cartIcon" src="images/cart.svg" alt="cart">
 					<span>5</span>
 				</span>
 			</div>
 		</div>
 	</div>
 
-	<div class="new-arrivals">
+	<div class="newArrivals">
 		<div class="container">
 			<h1>SHOPPING CART</h1>
 		</div>
 	</div>
 
-	<div class="container shopping-cart">
-		<div class="shopping-cart-letf">
-			<div class="shopping-item">
-				<img class="cart-img" src="images/feature3.jpg" alt="">
-				<div class="cart-content">
+	<div class="container b-shoppingCart">
+		<div class="b-shoppingCart__letf">
+			<div class="shoppingItem">
+				<img class="cartImg" src="images/feature3.jpg" alt="">
+				<div class="cartContent">
 					<div class="cart-title">MANGO  PEOPLE  T-SHIRT</div>
 					<div class="cart-data">
 						<div class="cart-item-price">Price: <span>$300</span></div>
@@ -54,11 +50,11 @@
 						</div>
 					</div>
 				</div>
-				<img class="close-icon" src="images/close-icon.svg" alt="">
+				<img class="closeIcon" src="images/close-icon.svg" alt="">
 			</div>
-			<div class="shopping-item">
-				<img class="cart-img" src="images/feature4.jpg" alt="">
-				<div class="cart-content">
+			<div class="shoppingItem">
+				<img class="cartImg" src="images/feature4.jpg" alt="">
+				<div class="cartContent">
 					<div class="cart-title">MANGO  PEOPLE  T-SHIRT</div>
 					<div class="cart-data">
 						<div class="cart-item-price">Price: <span>$300</span></div>
@@ -69,26 +65,26 @@
 						</div>
 					</div>
 				</div>
-				<img class="close-icon" src="images/close-icon.svg" alt="">
+				<img class="closeIcon" src="images/close-icon.svg" alt="">
 			</div>
 				
 
-			<div class="cart-left-buttons">
+			<div class="b-shoppingCart__buttons">
 				<button>Clear shopping cart</button>
 				<button>Continue shopping</button>
 			</div>
 		</div>
 
-		<div class="shopping-cart-right">
-            <form action="" class="cart-form">
-                <div class="cart-right-header">SHIPPING ADDRESS</div>
+		<div class="b-shoppingCart__right">
+            <form action="" class="cartForm">
+                <div class="b-shoppingCart__right_header">SHIPPING ADDRESS</div>
                 <input type="text" placeholder="Bangladesh">
                 <input type="text" placeholder="State">
                 <input type="text" placeholder="Postcode / Zip">
                 <button>GET A QUOTE</button>
             </form>
 
-            <div class="cart-total">
+            <div class="cartTotal">
                 <div class="subtotal">
                     SUB TOTAL <span>$900</span>
                 </div>
@@ -103,77 +99,20 @@
 	</div>
 
 	
-	<!-- <div class="features container">
-		<div class="features-container">
-				<div class="feature-item">
-				<div class="item-img-wrap">
-					<img src="images/feature3.jpg" alt="photo">
-					<div class="item-img-dark">
-						<button>
-							<img src="images/cart.svg" alt="cart">Add to Cart
-						</button>
-					</div>
-				</div>
-				<div class="item-name">ELLERY X M'O CAPSULE</div>
-				<div class="item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</div>
-				<div class="item-price">$52.00</div>
-			</div>
-
-			<div class="feature-item">
-				<div class="item-img-wrap">
-					<img src="images/feature4.jpg" alt="photo">
-					<div class="item-img-dark">
-						<button>
-							<img src="images/cart.svg" alt="cart">Add to Cart
-						</button>
-					</div>
-				</div>
-				<div class="item-name">ELLERY X M'O CAPSULE</div>
-				<div class="item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</div>
-				<div class="item-price">$52.00</div>
-			</div>
-
-			<div class="feature-item">
-				<div class="item-img-wrap">
-					<img src="images/feature6.jpg" alt="photo">
-					<div class="item-img-dark">
-						<button>
-							<img src="images/cart.svg" alt="cart">Add to Cart
-						</button>
-					</div>
-				</div>
-				<div class="item-name">ELLERY X M'O CAPSULE</div>
-				<div class="item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</div>
-				<div class="item-price">$52.00</div>
-			</div>
-		</div>
-
-			<div class="pagination">
-				<img src="images/catalog/arrow-left.svg" alt="">
-					<a href="#">1</a>
-					<a href="#">2</a>
-					<a href="#">3</a>
-					<a href="#">4</a>
-					<a href="#">5</a>
-					<a href="#">6...20</a>
-				<img src="images/catalog/arrow-right.svg" alt="">
-			</div>
-	</div> -->
-	
-	<div class="subscribe">
+	<div class="b-subscribe">
         <div class="container">
 
-            <div class="user-info">
-                <img class="rotate-vert-center" src="images/subscribe-user.png" alt="">
-                <div class="user-text">
+            <div class="b-subscribe__userInfo">
+                <img src="images/subscribe-user.png" alt="">
+                <div class="b-subscribe__userInfo_text">
                     “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“
                 </div>
             </div>
 
-            <div class="subscribe-form">
-                <div class="form-title">SUBSCRIBE</div>
-                <div class="form-text">FOR OUR NEWLETTER AND PROMOTION</div>
-                <form action="" class="email">
+            <div class="b-subscribe__form">
+                <div class="b-subscribe__form_title">SUBSCRIBE</div>
+                <div class="b-subscribe__form_text">FOR OUR NEWLETTER AND PROMOTION</div>
+                <form action="" class="b-subscribe__form_email">
                     <input type="text" placeholder="Enter Your Email">
                     <button>Subscribe</button>
                 </form>
@@ -182,29 +121,29 @@
         </div>
 	</div>
 	
-	<div class="footer">
+	<div class="b-footer">
         <div class="container">
-			<div class="social">
-				<a href="#">
-					<i class="fab fa-facebook-f"></i>
+			<div class="b-footer__copyright">
+                &copy; 2021  Brand  All Rights Reserved.
+            </div>
+
+            <div class="b-footer__social">
+                <a href="#">
+                    <i class="fab fa-facebook-f"></i>
                 </a>
                 <a href="#">
-					<i class="fab fa-instagram"></i>
+                    <i class="fab fa-instagram"></i>
                 </a>
                 <a href="#">
-					<i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-pinterest-p"></i>
                 </a>
                 <a href="#">
-					<i class="fab fa-twitter"></i>
+                    <i class="fab fa-twitter"></i>
                 </a>
             </div>
-			<div class="copyright">
-				&copy; 2021  Brand  All Rights Reserved.
-			</div>
+        
         </div>
     </div>
-
-
 
 
 </body>

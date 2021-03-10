@@ -1,6 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+.newArrivals {
+  margin-bottom: 39px;
 
-.new-arrivals {
+  @media (min-width: 768px) {
+    margin-bottom: 59px;
+  }
+  @media (min-width: 1600px) {
+    margin-bottom: 96px;
+  }
+
+
   .container {
     display: flex;
     justify-content: center;
@@ -9,11 +17,6 @@
   
     @media (min-width: 768px) {
       justify-content: flex-start;
-    }
-
-    @media (min-width: 1600px) {
-      // max-width: 1140px;
-      // margin: 0 auto;
     }
   }
 
@@ -24,8 +27,7 @@
   }
 }
 
-.shopping-cart {
-  margin-top: 39px;
+.b-shoppingCart {
   margin-bottom: 96px;
   padding: 0 9px;
 
@@ -39,13 +41,13 @@
     justify-content: space-between;
   }
 
-  .shopping-cart-left {
+  &__left {
     // display: flex;
     // flex-direction: column;
     margin-top: 30px;
   }
 
-  .shopping-item {
+  .shoppingItem {
     background: white;
     position: relative;
     // width: 358px;
@@ -73,7 +75,7 @@
     }
 
 
-    .cart-img {
+    .cartImg {
       width: 143px;
       height: 188px;
 
@@ -83,7 +85,7 @@
       }
     }
 
-    .cart-content {
+    .cartContent {
       padding: 13px 17px;
 
       @media (min-width: 768px) {
@@ -137,7 +139,7 @@
       }
     }
 
-    .close-icon {
+    .closeIcon {
       position: absolute;
       top: 17px;
       right: 12px;
@@ -154,7 +156,7 @@
     }
   }
 
-  .cart-left-buttons {
+  &__buttons {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
@@ -194,26 +196,28 @@
     }
   }
 
-.shopping-cart-right {
+&__right {
   padding: 0 9px;
+  margin-bottom: 96px;
 
   @media (min-width: 768px) and (max-width: 1599px) {
       display: flex;
       justify-content: space-between;
+      margin-bottom: 128px;
   }
 
   @media (min-width: 1600px) {
       width: 360px;
   }
 
-  .cart-right-header {
+  &_header {
       font-weight: 300;
       font-size: 16px;
       line-height: 19px;
       color: #222222;
   }
 
-  .cart-form {
+  .cartForm {
 
       @media (max-width: 1599px) {
           margin-top: 20px;
@@ -256,7 +260,7 @@
       }
   }
 
-  .cart-total {
+  .cartTotal {
       background: #F5F3F3;
       height: 214px;
       padding: 39px 43px 42px;
