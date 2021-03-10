@@ -19,103 +19,117 @@ body {
 	margin: 0 auto;
 }
 
-.subscribe {
+.b-subscribe {
     background: url(images/subscribe.jpg) no-repeat;
     background-size: cover;
     padding-top: 64px;
-    padding-bottom: 109px;
+	padding-bottom: 109px;
+
+	@media (min-width: 1600px) {
+		padding-top: 97px;
+		padding-bottom: 126px;
+
+		.container {
+			margin: 0 auto;
+			padding: 0;
+			width: 1140px;
+			display: flex;
+			justify-content: space-around;
+		}	
+	}
+	
+	
+	&__userInfo {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		&_text {
+			margin-top: 30px;
+			text-align: center;
+			font-size: 18px;
+			line-height: 22px;
+			color: #222224;
+			max-width: 330px;
+		}
+	}
+	
+	&__form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 65px;
+
+		&_title {
+			font-weight: 700;
+			font-size: 24px;
+			color: #222224;
+		}
+		
+		&_title,
+		&_text {
+			max-width: 271px;
+			text-align: center;
+		}
+		
+		&_text {
+			font-size: 14px;
+			color: #222224;
+			margin-bottom: 22px;
+		}
+		
+		&_email {
+			height: 47px;
+
+			input {
+				height: inherit;
+				background: #e1e1e1;
+				border: none;
+				padding: 6px 21px;
+				box-sizing: border-box;
+				border-top-left-radius: 28px;
+				border-bottom-left-radius: 28px;
+				float: left;
+				width: 185px;
+			}
+
+			input::-webkit-input-placeholder {
+				color: #222224;
+				font-family: inherit;
+				opacity: 0.67;
+			}
+			input::-moz-placeholder {
+				color: #222224;
+				font-family: inherit;
+				opacity: 0.67;
+			}
+			input:-ms-input-placeholder {
+				color: #222224;
+				font-family: inherit;
+				opacity: 0.67;
+			}
+			input:-moz-placeholder {
+				color: #222224;
+				font-family: inherit;
+				opacity: 0.67;
+			}
+			
+			button {
+				height: inherit;
+				border: none;
+				color: white;
+				font-family: inherit;
+				font-size: 14px;
+				line-height: 17px;
+				background: #f16d7f;
+				border-top-right-radius: 28px;
+				border-bottom-right-radius: 28px;
+				padding: 0 17px;
+			}
+		}
+	}
 }
 
-.user-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.user-text {
-    margin-top: 30px;
-    text-align: center;
-    font-size: 18px;
-    line-height: 22px;
-    color: #222224;
-    max-width: 330px;
-}
-
-.subscribe-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 65px;
-}
-
-
-.form-title {
-    font-weight: 700;
-    font-size: 24px;
-    color: #222224;
-}
-
-.form-title,
-.form-text {
-    max-width: 271px;
-    text-align: center;
-}
-
-.form-text {
-    font-size: 14px;
-    color: #222224;
-    margin-bottom: 22px;
-}
-
-.email {
-    height: 47px;
-}
-
-.email input {
-    height: inherit;
-    background: #e1e1e1;
-    border: none;
-    padding: 6px 21px;
-    box-sizing: border-box;
-    border-top-left-radius: 28px;
-    border-bottom-left-radius: 28px;
-    float: left;
-    width: 185px;
-}
-
-.email input::-webkit-input-placeholder {
-    color: #222224;
-    font-family: inherit;
-    opacity: 0.67;
-}
-.email input::-moz-placeholder {
-    color: #222224;
-    font-family: inherit;
-    opacity: 0.67;
-}
-.email input:-ms-input-placeholder {
-    color: #222224;
-    font-family: inherit;
-    opacity: 0.67;
-}
-.email input:-moz-placeholder {
-    color: #222224;
-    font-family: inherit;
-    opacity: 0.67;
-}
-
-.email button {
-    height: inherit;
-    border: none;
-    color: white;
-    font-family: inherit;
-    font-size: 14px;
-    line-height: 17px;
-    background: #f16d7f;
-    border-top-right-radius: 28px;
-    border-bottom-right-radius: 28px;
-    padding: 0 17px;
-}
 
 .footer {
     background: #222224;
@@ -174,27 +188,5 @@ body {
 
 	.copyright {
 		padding-top: 15px;
-	} 
-	
-}
-
-@media (min-width: 1600px) {
-
-	.subscribe {
-		padding-top: 97px;
-		padding-bottom: 126px;
-	}
-
-	.subscribe .container {
-		margin: 0 auto;
-		padding: 0;
-        width: 1140px;
-        display: flex;
-        justify-content: space-around;
-	}
-	
-	.subscribe-form {
-        margin-top: initial;
-    }
-
+	} 	
 }

@@ -574,14 +574,31 @@ body {
   margin: 0 auto;
 }
 
-.subscribe {
+.b-subscribe {
   background: url(images/subscribe.jpg) no-repeat;
   background-size: cover;
   padding-top: 64px;
   padding-bottom: 109px;
 }
 
-.user-info {
+@media (min-width: 1600px) {
+  .b-subscribe {
+    padding-top: 97px;
+    padding-bottom: 126px;
+  }
+  .b-subscribe .container {
+    margin: 0 auto;
+    padding: 0;
+    width: 1140px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+.b-subscribe__userInfo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -594,7 +611,7 @@ body {
           align-items: center;
 }
 
-.user-text {
+.b-subscribe__userInfo_text {
   margin-top: 30px;
   text-align: center;
   font-size: 18px;
@@ -603,7 +620,7 @@ body {
   max-width: 330px;
 }
 
-.subscribe-form {
+.b-subscribe__form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -617,29 +634,28 @@ body {
   margin-top: 65px;
 }
 
-.form-title {
+.b-subscribe__form_title {
   font-weight: 700;
   font-size: 24px;
   color: #222224;
 }
 
-.form-title,
-.form-text {
+.b-subscribe__form_title, .b-subscribe__form_text {
   max-width: 271px;
   text-align: center;
 }
 
-.form-text {
+.b-subscribe__form_text {
   font-size: 14px;
   color: #222224;
   margin-bottom: 22px;
 }
 
-.email {
+.b-subscribe__form_email {
   height: 47px;
 }
 
-.email input {
+.b-subscribe__form_email input {
   height: inherit;
   background: #e1e1e1;
   border: none;
@@ -652,31 +668,31 @@ body {
   width: 185px;
 }
 
-.email input::-webkit-input-placeholder {
+.b-subscribe__form_email input::-webkit-input-placeholder {
   color: #222224;
   font-family: inherit;
   opacity: 0.67;
 }
 
-.email input::-moz-placeholder {
+.b-subscribe__form_email input::-moz-placeholder {
   color: #222224;
   font-family: inherit;
   opacity: 0.67;
 }
 
-.email input:-ms-input-placeholder {
+.b-subscribe__form_email input:-ms-input-placeholder {
   color: #222224;
   font-family: inherit;
   opacity: 0.67;
 }
 
-.email input:-moz-placeholder {
+.b-subscribe__form_email input:-moz-placeholder {
   color: #222224;
   font-family: inherit;
   opacity: 0.67;
 }
 
-.email button {
+.b-subscribe__form_email button {
   height: inherit;
   border: none;
   color: white;
@@ -762,26 +778,6 @@ body {
   }
   .copyright {
     padding-top: 15px;
-  }
-}
-
-@media (min-width: 1600px) {
-  .subscribe {
-    padding-top: 97px;
-    padding-bottom: 126px;
-  }
-  .subscribe .container {
-    margin: 0 auto;
-    padding: 0;
-    width: 1140px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  .subscribe-form {
-    margin-top: initial;
   }
 }
 /*# sourceMappingURL=style.css.map */
