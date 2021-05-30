@@ -1,6 +1,8 @@
 .header {
 	background: #222222;
 	height: 75px;
+
+	
 }
 
 .b-navBar {
@@ -10,8 +12,12 @@
 	padding: 18px 16px;
 	box-sizing: border-box;
 	
-	@media (min-width: 768px) {
-		padding: 18px 32px;
+	// @media (min-width: 768px) {
+	// 	padding: 18px px;
+	// }
+
+	@media (min-width: 1160px) {
+		padding: 18px 0;
 	}
     
     &__rightSearchIcon {
